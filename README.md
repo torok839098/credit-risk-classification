@@ -3,9 +3,13 @@
 Using various techniques to train and evaluate a model based on loan risk. Use the dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
 
 *Before beginning the analysis (based on instructions):
+
 -Clown new repository with name of Module
+
 -Download the Module Files and create a folder titled "Credit_Risk."
+
 -Inside the "Credit_Risk" folder, add the credit_risk_classification.ipynb and lending_data.csv files found in the "Starter_Code.zip" file.
+
 -Push your changes to GitHub.
 
 
