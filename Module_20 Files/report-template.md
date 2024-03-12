@@ -147,29 +147,21 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 * Machine Learning Model 1:Logistic Regression Model with the Original Data
   * Description of Model 1 Accuracy, Precision, and Recall scores.
-Classification report: 
-              precision    recall  f1-score   support
 
- loan_status       1.00      1.00      1.00     18759
-           X       0.87      0.89      0.88       625
+<img width="532" alt="Credit_risk_classification_Model_1" src="https://github.com/torok839098/credit-risk-classification/assets/135182172/250fad8b-825c-4b85-8304-82adb1546b2a">
 
-    accuracy                           0.99     19384
-   macro avg       0.94      0.94      0.94     19384
-weighted avg       0.99      0.99      0.99     19384
+
+The logistic regression model predicted a high accuracy score of 99.2%. This can be seen through the confusion matrix,since the model has 18679 true negatives and 558 true positives. According to the classifcation report, we see that accuracy scores are higher, and the loan status has a score of 1.00 in all three areas (precision, recall, f1-score, support) means that the model was able to accurately predict the loan-status. Now, X has lower scores which could be from the false negatives and false positives. However, as always it's important to continue testing and reruning the model to improve accuracy.
 
 
 * Machine Learning Model 2:Logistic Regression Model with Resampled Training Data
   * Description of Model 2 Accuracy, Precision, and Recall scores.
 
-                  precision    recall  f1-score   support
+    <img width="532" alt="Credit_risk_classification_Model_2" src="https://github.com/torok839098/credit-risk-classification/assets/135182172/4de969f7-de88-4f55-a841-8ef7396b9c29">
 
-           0       1.00      1.00      1.00     18759
-           1       0.87      1.00      0.93       625
+The resampled logistic regression model predicted a high accuracy score of 99.5%.Compared with the previous confusion matrix,it produced fewer false negatives but it did produce higher false positives. True negatives are slightly lower by 11 while the true positives increased by 70. 
 
-    accuracy                           1.00     19384
-   macro avg       0.94      1.00      0.96     19384
-weighted avg       1.00      1.00      1.00     19384
-
+According to the classifcation report, we see that accuracy scores are higher, and the loan status has a score of 1.00 in all three areas (precision, recall, f1-score, support) means that the model was able to accurately predict healthy loan-status. High risk loans have same score for precision but increased in recall (1.00) and f1-score (0.93) . Recall in all categories listed in the report is 1.00. F1 score has a range of lower 90s to 1.00.Despite some decrease in some scores, having a few false negatives may have contributed to higher scores. Also the data was resampled which helps with imbalanced data, making it more valid. 
 
 
 
@@ -187,7 +179,7 @@ The logistic regression model demonstrated strong predictive capability for both
 
 
 
-The purpose as mentioned before is analyze credit-risk classification.So, whether or not one label is more important to predict would depend on that purpose/context. If I were to work in a car dealership, for example, the model would benift the company to determine which features can determine a high-risk loan and who to give this loan to. Another situation that loans are used is for education. Something to consider is it feasible to give this person this particular loan, without considering other factors that could prevent the person from paying in the future? Now, both  'healthy' and 'high-risk' could both relate to your target clients/ the business depending how you analyze it.Maybe you are a company that analyzes credit and gives recommendations, so this model is useful to group the clients and have insights of what features/labels need more improvement. Going back to car loans, you need to have a certain credit score for the loan, so using the model to predict which of those credit scores leads to an increase of the 'healthy' loan. Finally, maybe looking into the accuracy scores and confusion matrix as well, seeing how you can reduce the false negatives and positives. 
+The purpose as mentioned before is analyze credit-risk classification.So, whether or not one label is more important to predict would depend on that purpose/context. If I were to work in a car dealership, for example, the model would benift the company to determine which features can determine a high-risk loan and who to give this loan to. Another situation that loans are used is education. Something to consider is that is it feasible to give this person this particular loan, without considering other factors that could prevent the person from paying in the future? Now, both 'healthy' and 'high-risk' could both relate to your target clients/the business depending how you analyze it.Maybe you are a company that analyzes credit and gives recommendations, so this model is useful to group the clients and have insights of what features/labels need more improvement. Going back to car loans, you need to have a certain credit score to be approved for the loan, so using the model to predict which of those credit scores leads to an increase of the 'healthy' loan. Finally, maybe looking into the accuracy scores and confusion matrix as well, seeing how you can reduce the false negatives and positives. 
 
 
 
